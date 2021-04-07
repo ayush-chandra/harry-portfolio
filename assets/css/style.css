@@ -1,3 +1,14 @@
+:root {
+  --cta: #000000;
+  --primary-high: #333333;
+  --primary-low: #4f4f4f;
+  --secondary-high: #767676;
+  --secondary-low: #e0e0e0;
+  --base: #ffffff;
+  --base-alpha: #fafafa;
+  --bod-rad-pri: 0px;
+  --bod-rad-sec: 5px;
+}
 a,
 body,
 div,
@@ -137,7 +148,7 @@ html {
 }
 .center-text {
   text-align: center;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   color: var(--secondary-high);
   line-height: 28px;
@@ -150,7 +161,7 @@ html {
   margin-bottom: 30px;
 }
 .left-text {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   color: var(--secondary-high);
   line-height: 28px;
@@ -204,7 +215,7 @@ html {
 a.main-button-slider {
   display: inline-block;
   font-size: 16px;
-  border-radius: var(--bod-rad-pri);
+  border-radius: var(--bod-rad-sec);
   padding: 14px 28px;
   background-color: var(--primary-high);
   color: #fff;
@@ -225,7 +236,7 @@ a.main-button {
   border-radius: var(--bod-rad-sec);
   padding: 12px 20px;
   background: var(--primary-low);
-  text-transform: uppercase;
+  font-weight: 500;
   color: #fff;
   letter-spacing: 0.5px;
   -webkit-transition: all 0.3s ease 0s;
@@ -255,17 +266,6 @@ button.main-button {
 button.main-button:hover {
   background: var(--cta);
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
-}
-:root {
-  --cta: #000000;
-  --primary-high: #333333;
-  --primary-low: #4f4f4f;
-  --secondary-high: #767676;
-  --secondary-low: #e0e0e0;
-  --base: #ffffff;
-  --base-alpha: #fafafa;
-  --bod-rad-pri: 0px;
-  --bod-rad-sec: 5px;
 }
 .arrow,
 .arrow:before {
@@ -727,7 +727,7 @@ button.main-button:hover {
   color: #767676;
   letter-spacing: 0.25px;
   line-height: 26px;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 15px;
 }
 .mini .mini-content .mini-box {
@@ -769,7 +769,7 @@ button.main-button:hover {
 }
 .mini .mini-content .mini-box strong {
   display: block;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 17px;
   color: #1e1e1e;
   letter-spacing: 0.25px;
@@ -906,7 +906,7 @@ button.main-button:hover {
   transition: all 0.3s ease 0s;
 }
 .team-item:hover {
-  transform: scale(1.075);
+  transform: scale(1.05);
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.15);
 }
 .team-item i {
@@ -945,7 +945,7 @@ button.main-button:hover {
 }
 .team-item .team-content .team-info .user-name {
   display: block;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 17px;
   color: var(--primary-high);
   letter-spacing: 0.25px;
@@ -953,7 +953,7 @@ button.main-button:hover {
 }
 .team-item .team-content .team-info span {
   display: block;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 15px;
   color: var(--secondary-high);
   letter-spacing: 0.25px;
@@ -963,7 +963,7 @@ button.main-button:hover {
   padding-left: 25px;
   padding-right: 25px;
   margin-bottom: 25px;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 15px;
   color: var(--secondary-high);
   letter-spacing: 0.6px;
@@ -985,7 +985,7 @@ button.main-button:hover {
 }
 @media (min-width: 991px) {
   .pricing-item.active {
-    transform: scale(1.1);
+    transform: scale(1.05);
     box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.15);
   }
 }
@@ -1008,8 +1008,8 @@ button.main-button:hover {
   padding-bottom: 10px;
 }
 .pricing-item .pricing-header .pricing-title {
-  font-weight: 500;
-  font-size: 17px;
+  font-weight: 600;
+  font-size: 18px;
   letter-spacing: 0.25px;
   color: #1e1e1e;
   width: 180px;
@@ -1041,14 +1041,13 @@ button.main-button:hover {
 .pricing-item .pricing-body .list li {
   text-align: center;
   margin-bottom: 12px;
-  font-weight: 400;
-  font-size: 13px;
-  color: #7a7a7a;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--secondary-high);
   letter-spacing: 0.25px;
   text-decoration: line-through;
 }
 .pricing-item .pricing-body .list li.active {
-  color: #7a7a7a;
   text-decoration: none;
 }
 .pricing-item .pricing-footer {
@@ -1063,7 +1062,7 @@ button.main-button:hover {
   overflow: hidden;
   border-radius: var(--bod-rad-sec);
   position: relative;
-  height: 200px;
+  height: 226.5px;
 }
 .blog-post-thumb .blog-content {
   margin-top: -30px;
@@ -1114,7 +1113,7 @@ button.main-button:hover {
   line-height: 26px;
 }
 .contact-text {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   color: var(--secondary-high);
   letter-spacing: 1.6px;
@@ -1336,4 +1335,11 @@ img {
 }
 .zoom:hover{
   transform: scale(1.2);
+}
+img {
+  image-rendering: -moz-pixelated;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast !important;
+  image-rendering: pixelated;
+  -ms-interpolation-mode: nearest-neighbor;
 }
