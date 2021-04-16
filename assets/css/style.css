@@ -127,7 +127,7 @@ html {
   }
 }
 .left-heading .section-title {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 24px;
   line-height: 42px;
   color: var(--primary-high);
@@ -139,7 +139,7 @@ html {
   text-align: center;
 }
 .center-heading .section-title {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 28px;
   color: #1e1e1e;
   letter-spacing: 1.75px;
@@ -289,7 +289,7 @@ button.main-button:hover {
   }
 }
 .arrow:before {
-  content: '';
+  content: "";
   width: 20px;
   height: 20px;
   top: 50%;
@@ -373,13 +373,14 @@ button.main-button:hover {
 .header-area .main-nav .nav li {
   padding-left: 20px;
   padding-right: 20px;
+  font-weight: 500;
 }
 .header-area .main-nav .nav li:last-child {
   padding-right: 0;
 }
 .header-area .main-nav .nav li a {
   display: block;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 12px;
   color: #fff;
   -webkit-transition: all 0.3s ease 0s;
@@ -436,7 +437,7 @@ button.main-button:hover {
 }
 .header-area .main-nav .menu-trigger span:after,
 .header-area .main-nav .menu-trigger span:before {
-  content: '';
+  content: "";
 }
 .header-area .main-nav .menu-trigger span {
   top: 16px;
@@ -605,7 +606,7 @@ button.main-button:hover {
   width: 100%;
 }
 .welcome-area .header-text h1 {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 50px;
   line-height: 80px;
   letter-spacing: 1.4px;
@@ -643,7 +644,7 @@ button.main-button:hover {
 }
 .welcome-area .header-text p:nth-child(1) {
   margin-bottom: 40px;
-  font-weight: 400;
+  font-weight: 500;
 }
 @media (max-width: 991px) {
   .welcome-area .header-text h1 {
@@ -687,7 +688,7 @@ button.main-button:hover {
   padding-bottom: 90px;
 }
 .mini:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 140%;
   height: 140%;
@@ -716,7 +717,7 @@ button.main-button:hover {
 }
 .mini .mini-content .info h1 {
   color: var(--primary-high);
-  font-weight: 500;
+  font-weight: 600;
   font-size: 28px;
   letter-spacing: 0.25px;
   margin-bottom: 30px;
@@ -749,7 +750,7 @@ button.main-button:hover {
   cursor: none;
 }
 .mini .mini-content .mini-box:before {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
   background: #fff;
@@ -769,7 +770,7 @@ button.main-button:hover {
 }
 .mini .mini-content .mini-box strong {
   display: block;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 17px;
   color: #1e1e1e;
   letter-spacing: 0.25px;
@@ -781,7 +782,7 @@ button.main-button:hover {
   position: relative;
 }
 .counter:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 140%;
   height: 140%;
@@ -812,7 +813,7 @@ button.main-button:hover {
   position: relative;
 }
 .counter .content .count-item.decoration-bottom:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 70%;
   height: 32px;
@@ -828,7 +829,7 @@ button.main-button:hover {
   position: relative;
 }
 .counter .content .count-item.decoration-top:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 70%;
   height: 32px;
@@ -1040,7 +1041,7 @@ button.main-button:hover {
 }
 .pricing-item .pricing-body .list li {
   text-align: center;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
   font-weight: 500;
   font-size: 14px;
   color: var(--secondary-high);
@@ -1049,6 +1050,7 @@ button.main-button:hover {
 }
 .pricing-item .pricing-body .list li.active {
   text-decoration: none;
+  font-weight: 600;
 }
 .pricing-item .pricing-footer {
   text-align: center;
@@ -1060,9 +1062,9 @@ button.main-button:hover {
 }
 .blog-post-thumb .img {
   overflow: hidden;
-  border-radius: var(--bod-rad-sec);
+  border-radius: 15px;
   position: relative;
-  height: 226.5px;
+  height: 255px;
 }
 .blog-post-thumb .blog-content {
   margin-top: -30px;
@@ -1072,7 +1074,7 @@ button.main-button:hover {
   margin-bottom: 20px !important;
 }
 .blog-post-thumb h3 a {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 18px;
   color: var(--cta);
   letter-spacing: 0.25px;
@@ -1086,10 +1088,10 @@ button.main-button:hover {
   color: var(--cta);
 }
 .blog-post-thumb .text {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 13px;
   color: var(--secondary-high);
-  letter-spacing: 0.5px;
+  letter-spacing: 0.75px;
   line-height: 26px;
   margin-bottom: 15px;
 }
@@ -1100,7 +1102,11 @@ button.main-button:hover {
 @media (max-width: 768px) {
   .blog-post-thumb .img img {
     margin-top: 8%;
+    border-radius: 15px;
   }
+}
+.form-control {
+  border: none;
 }
 #contact-us {
   padding: 160px 0;
@@ -1134,6 +1140,9 @@ button.main-button:hover {
     margin-bottom: 50px;
     font-size: 16px;
   }
+  #contact-us {
+    background: #fafafa;
+  }
 }
 .contact-text p {
   margin-bottom: 28px;
@@ -1142,23 +1151,21 @@ button.main-button:hover {
 .contact-form textarea {
   color: var(--primary-high);
   font-size: 14px;
-  border: 1px solid var(--secondary-low);
   width: 100%;
   height: 50px;
   outline: 0;
   padding-left: 20px;
   padding-right: 20px;
-  border-radius: var(--bod-rad-sec);
+  box-shadow: 1px 1px 57px rgba(123, 136, 168, 0.08);
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   margin-bottom: 30px;
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05);
 }
 @media (min-width: 991px) {
   .contact-form input,
   .contact-form textarea {
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.125);
+    box-shadow: 1px 1px 57px rgba(123, 136, 168, 0.08);
   }
 }
 .contact-form textarea {
@@ -1210,11 +1217,12 @@ footer .copyright {
   margin-top: 30px;
   padding-top: 30px;
   padding-bottom: 30px;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 12px;
   color: #fff;
   letter-spacing: 0.88px;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 #preloader {
   overflow: hidden;
@@ -1325,15 +1333,15 @@ img {
   transition: transform 300ms;
 }
 .chat-blob:hover {
-  transform: scale(1.5);
+  transform: scale(1.25);
 }
-.img-zoom{
+.img-zoom {
   overflow: none;
 }
-.zoom{
+.zoom {
   transition: transform 2.5s linear;
 }
-.zoom:hover{
+.zoom:hover {
   transform: scale(1.2);
 }
 img {
@@ -1342,4 +1350,14 @@ img {
   image-rendering: -webkit-optimize-contrast !important;
   image-rendering: pixelated;
   -ms-interpolation-mode: nearest-neighbor;
+}
+img {
+  transition: all 300ms;
+}
+img:hover,
+img:focus {
+  transform: scale(1.05);
+}
+.img .img-zoom {
+  border-radius: 15px;
 }
